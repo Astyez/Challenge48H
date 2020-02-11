@@ -1,4 +1,4 @@
-# Groupe46
+# Groupe 46
 
 Membres du groupe :
 - Bastien Bruyez
