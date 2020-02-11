@@ -33,3 +33,14 @@ def medic():
     path = Pathology.query.get(patho_icd_10)
     print(path)
     return render_template("medic.html", name="Ynov", pathology=path, user=user_id)
+
+
+@app.route("/prescription", methods=["GET", "POST"])
+def prescription():
+
+    form = MedicForm(request.form)
+    patho_icd_10= (request.form.get("pathology"))
+    user_id = (request.form.get("user"))
+    path = Pathology.query.get(patho_icd_10)
+    print(path)
+    return render_template("prescription.html", title="Gloth", subtitle="subtitle", patient_form=form, name="Ynov")
