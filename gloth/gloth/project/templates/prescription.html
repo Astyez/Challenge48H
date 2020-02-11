@@ -1,0 +1,117 @@
+{% extends 'base.html' %} {% block content %}
+
+	<div class="recherche">
+		<label class="add"><strong>Rechercher un medicament: </strong><br></label>
+		<input id="search" type="search" name="search">
+	</div>
+	<div class="Diagnostiques">
+		<p class="title"><strong>Prescription possible </strong></p><br>
+	</div>
+	<div class="pathologie">
+		<p class="nompato"> <strong>Eczéma</strong></p>
+	</div>
+	<div class="info">
+		<p class="tInfo"><strong>La gestion de ce syndrome repose sur l'utilisation de crèmes à base de cortisone diminuant les démangeaisons et l'inflammation, la prise d'antihistaminiques. Un traitement par rayons ultraviolets comme la photothérapie ou photo chimiothérapie peut également être prescrit.</strong></p>
+	</div>
+	<div class="medicament">
+		<h5>Liste des médicaments proposés :</h5>
+		<input type="checkbox" id="scale" name="Clarelux">
+		<label class="coche">Clarelux 500 microgammes (mousse)</label><br>
+		<input type="checkbox" id="scale" name="Clobex">
+		<label class="coche">Clobex 500 microgammes (shampooing)</label><br> 
+		<input type="checkbox" id="scale" name="Dermoval-creme">
+		<label class="coche">Dermoval 0,05 pour cent (crème)</label><br>
+		<input type="checkbox" id="scale" name="Dermoval">
+		<label class="coche">Dermoval (gel)</label> <br>
+		<input type="checkbox" id="scale" name="Diprolene">
+		<label class="coche">Diprolene 0,05 pour cent (pommade)</label>
+	</div>
+	<button type="submit" class="button">
+		<strong>Selectionner</strong>
+	</button>
+
+<style>
+
+.Diagnostiques
+{
+	margin: auto;
+	text-align: center;
+	/* margin-top: 5%; */
+
+}
+.title
+{
+	font-size: 2.7em;
+	color: #2C3E50;
+	font-family: 'PT Serif', serif;
+}
+.pathologie
+{
+	margin: auto;
+	margin-left: 32%;
+}
+.nompato
+{
+	font-size: 2em;
+	color: #2C3E50;
+	font-family: 'PT Serif', serif;
+}
+
+.info
+{
+	margin: auto;
+	margin-left: 33%;
+	margin-right: 35%;
+}
+.tInfo
+{
+	font-size: 1.2em;
+	color: #2C3E50;
+	font-family: 'PT Serif', serif;
+}
+.medicament
+{
+	margin: auto;
+	margin-left: 33%;
+	margin-right: 35%;
+	margin-top: 2em;
+}
+.medoc
+{
+	font-size: 1.2em;
+	color: #2C3E50;
+	font-family: 'PT Serif', serif;
+}
+.coche
+{
+	font-size: 1.2em;
+	color: #2C3E50;
+	font-family: 'PT Serif', serif;
+}
+.button 
+{
+    width: 50%;
+    margin-top: 18px;
+    margin-left: 25%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: #2c3e50;
+    color: #fff;
+    font-size: 1.2em;
+}
+.add
+{
+    font-size: 1.2em;
+	color: #2C3E50;
+	font-family: 'PT Serif', serif;
+}
+.recherche
+{
+	width: 20%;
+	position: absolute;
+	top:0;
+	right: 50px;
+}
+	</style>
+{% endblock%}
